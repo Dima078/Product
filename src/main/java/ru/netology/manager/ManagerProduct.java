@@ -1,4 +1,7 @@
-package ru.netology.product;
+package ru.netology.manager;
+
+import ru.netology.product.Product;
+import ru.netology.repository.RepositoriyProduct;
 
 public class ManagerProduct {
     private RepositoriyProduct repository;

@@ -5,10 +5,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProductTest {
+    private Product product = new Product();
+    private Book book = new Book();
+    private Smartphone smartphone = new Smartphone();
 
     @Test
     void getSetId() {
-        Product product = new Product();
         product.setId(2);
         int expected = 2;
         int actual = product.getId();
@@ -17,7 +19,6 @@ class ProductTest {
 
     @Test
     void getSetName() {
-        Product product = new Product();
         product.setName("Book");
         String expected = "Book";
         String actual = product.getName();
@@ -26,7 +27,6 @@ class ProductTest {
 
     @Test
     void getSetPrice() {
-        Product product = new Product();
         product.setPrice(100);
         int expected = 100;
         int actual = product.getPrice();
@@ -35,7 +35,6 @@ class ProductTest {
 
     @Test
     void getSetAutor() {
-        Book book = new Book();
         book.setAutor("autor1");
         String expected = "autor1";
         String actual = book.getAutor();
@@ -44,7 +43,6 @@ class ProductTest {
 
     @Test
     void getSetManufacturer() {
-        Smartphone smartphone = new Smartphone();
         smartphone.setManufacturer("man1");
         String expected = "man1";
         String actual = smartphone.getManufacturer();
